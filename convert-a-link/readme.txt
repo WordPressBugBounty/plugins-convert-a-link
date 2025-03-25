@@ -3,7 +3,7 @@ Contributors: awinglobal
 Tags: awin, zanox, affiliate window, convert a link, affiliate marketing, Publisher MasterTag
 Requires at least: 4.0
 Tested up to: 6.4
-Stable tag: 1.8.1
+Stable tag: 1.8.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,10 @@ This is the same piece of JavaScript so you would already have the Publisher Mas
 2. Step two: Enter your publisher ID and save
 
 == Changelog ==
+
+= 1.8.2 =
+- Tested with 6.7.2
+- Removed deprecated code
 
 = 1.8 =
 - Changed author to awinglobal

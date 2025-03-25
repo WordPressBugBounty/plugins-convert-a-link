@@ -12,7 +12,7 @@ if (!empty($_POST) && check_admin_referer('insert_publisher')) {
     }
 }
 ?>
-<div class="wrap" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<div class="wrap">
     <h2>Configure your MasterTag Settings </h2>
     <table>
         <tr>

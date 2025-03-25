@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) exit;
 /*
 Plugin Name: Awin Publisher MasterTag
 Description: The Awin Publisher MasterTag allows you to access and enable technology from Awin and our partners.
-Version:     1.8.1
+Version:     1.8.2
 Author:      awinglobal
 Author URI:  https://profiles.wordpress.org/awinglobal/
 Plugin URI:  https://wordpress.org/plugins/convert-a-link
