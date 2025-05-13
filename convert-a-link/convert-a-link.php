@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) exit;
 /*
 Plugin Name: Awin Publisher MasterTag
 Description: The Awin Publisher MasterTag allows you to access and enable technology from Awin and our partners.
-Version:     1.8.3
+Version:     1.8.4
 Author:      awinglobal
 Author URI:  https://profiles.wordpress.org/awinglobal/
 Plugin URI:  https://wordpress.org/plugins/convert-a-link
@@ -26,8 +26,11 @@ function convert_a_link_settings()
     );
 }
 
-$publisherId = get_option('cal_publisherId');
-wp_enqueue_script('convert-a-link', 'https://www.dwin2.com/pub.' . $publisherId . '.min.js', array(), false, true);
+add_action('wp_enqueue_scripts', 'convert_a_link_enqueue_script');
+function convert_a_link_enqueue_script() {
+    $publisherId = get_option('cal_publisherId');
+    wp_enqueue_script('convert-a-link', 'https://www.dwin2.com/pub.' . $publisherId . '.min.js', array(), false, true);
+}
 
 
 ##########################################################

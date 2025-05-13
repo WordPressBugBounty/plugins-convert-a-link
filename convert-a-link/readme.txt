@@ -3,7 +3,7 @@ Contributors: awinglobal
 Tags: awin, zanox, affiliate window, convert a link, affiliate marketing, Publisher MasterTag
 Requires at least: 4.0
 Tested up to: 6.7.2
-Stable tag: 1.8.3
+Stable tag: 1.8.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,9 @@ This is the same piece of JavaScript so you would already have the Publisher Mas
 2. Step two: Enter your publisher ID and save
 
 == Changelog ==
+
+= 1.8.4 =
+- Added wp_enqueue_script to load the script in the footer
 
 = 1.8.3 =
 - Tested with 6.7.2
