@@ -8,7 +8,7 @@ if (!empty($_POST) && check_admin_referer('insert_publisher')) {
         delete_option('cal_publisherId');
         add_option('cal_publisherId', $publisherId);
     } else {
-        echo "<div class='error'>FAILED! Insert publisher ID</div>";
+        echo "<div class='notice notice-error'>FAILED! Insert publisher ID</div>";
     }
 }
 ?>
@@ -22,14 +22,14 @@ if (!empty($_POST) && check_admin_referer('insert_publisher')) {
                 <i>Under "Toolbox" > "Links & Tools"</i>
                 <p>
                     <a target="_blank" href="https://wiki.awin.com/index.php/Publisher-MasterTag">
-                        <img src="<?php echo plugins_url("convert-a-link/one.png") ?>""></a>
+                        <img src="<?php echo esc_url(plugins_url('one.png', dirname(__FILE__))) ?>" alt=""></a>
                 </p>        
             </td>
         </tr>
         <tr>
             <td><b>Step 2: Enter your Publisher ID and save.</b></td>
             <td>
-                <form enctype=" multipart/form-data" name="convert-a-link" method="post" action="">
+                <form enctype="multipart/form-data" name="convert-a-link" method="post" action="">
                         <?php echo wp_nonce_field('insert_publisher'); ?>
                         <input type="number" value="<?php echo esc_attr(get_option('cal_publisherId')) ?>" name="publisherId" />
                         <input type="submit" name="submit" id="submit" class="button button-primary" value="Save">
